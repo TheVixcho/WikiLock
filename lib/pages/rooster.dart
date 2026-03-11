@@ -11,9 +11,8 @@ class RoosterPage extends StatelessWidget {
       ),
       body: GridView.builder(
         padding: const EdgeInsets.all(16),
-        // SliverGridDelegateWithMaxCrossAxisExtent hace que sea responsivo
         gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-          maxCrossAxisExtent: 200, // Ancho máximo de cada imagen
+          maxCrossAxisExtent: 200,
           childAspectRatio: 1,
           crossAxisSpacing: 10,
           mainAxisSpacing: 10,
@@ -32,7 +31,6 @@ class RoosterPage extends StatelessWidget {
                 fit: StackFit.expand,
                 children: [
                   const Icon(Icons.image, color: Colors.white24, size: 50),
-                  // Aquí irán tus imágenes reales más adelante
                   Positioned(
                     bottom: 8,
                     left: 8,
